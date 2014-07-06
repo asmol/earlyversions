@@ -1,0 +1,38 @@
+D:\Временное\gameserver\gameserver\bin\Debug\gameserver.exe.config
+D:\Временное\gameserver\gameserver\bin\Debug\gameserver.exe
+D:\Временное\gameserver\gameserver\bin\Debug\gameserver.pdb
+D:\Временное\gameserver\gameserver\obj\Debug\gameserver.csprojResolveAssemblyReference.cache
+D:\Временное\gameserver\gameserver\obj\Debug\gameserver.Properties.Resources.resources
+D:\Временное\gameserver\gameserver\obj\Debug\gameserver.csproj.GenerateResource.Cache
+D:\Временное\gameserver\gameserver\obj\Debug\gameserver.exe
+D:\Временное\gameserver\gameserver\obj\Debug\gameserver.pdb
+D:\Временное\gameserver\gameserver\obj\Debug\gameserver.FormMain.resources
+D:\Временное\MIHAN project 2\gameserver\gameserver\bin\Debug\gameserver.exe.config
+D:\Временное\MIHAN project 2\gameserver\gameserver\obj\Debug\gameserver.exe
+D:\Временное\MIHAN project 2\gameserver\gameserver\obj\Debug\gameserver.pdb
+D:\Временное\MIHAN project 2\gameserver\gameserver\bin\Debug\gameserver.exe
+D:\Временное\MIHAN project 2\gameserver\gameserver\bin\Debug\gameserver.pdb
+D:\Временное\MIHAN project 2\gameserver\gameserver\obj\Debug\gameserver.csprojResolveAssemblyReference.cache
+D:\Временное\MIHAN project 2\gameserver\gameserver\obj\Debug\gameserver.FormMain.resources
+D:\Временное\MIHAN project 2\gameserver\gameserver\obj\Debug\gameserver.Properties.Resources.resources
+D:\Временное\MIHAN project 2\gameserver\gameserver\obj\Debug\gameserver.csproj.GenerateResource.Cache
+D:\docum\_PROJECTS\gameserver\gameserver\bin\Debug\gameserver.exe.config
+D:\docum\_PROJECTS\gameserver\gameserver\obj\Debug\gameserver.exe
+D:\docum\_PROJECTS\gameserver\gameserver\obj\Debug\gameserver.pdb
+D:\docum\_PROJECTS\gameserver\gameserver\bin\Debug\gameserver.exe
+D:\docum\_PROJECTS\gameserver\gameserver\bin\Debug\gameserver.pdb
+D:\docum\_PROJECTS\gameserver\gameserver\obj\Debug\ResolveAssemblyReference.cache
+D:\docum\_PROJECTS\gameserver\gameserver\obj\Debug\gameserver.FormMain.resources
+D:\docum\_PROJECTS\gameserver\gameserver\obj\Debug\gameserver.Properties.Resources.resources
+D:\docum\_PROJECTS\gameserver\gameserver\obj\Debug\GenerateResource.read.1.tlog
+D:\docum\_PROJECTS\gameserver\gameserver\obj\Debug\GenerateResource.write.1.tlog
+D:\docum\_PROJECTS\EarlyVersions\gameserver\bin\Debug\gameserver.exe.config
+D:\docum\_PROJECTS\EarlyVersions\gameserver\obj\Debug\gameserver.exe
+D:\docum\_PROJECTS\EarlyVersions\gameserver\obj\Debug\gameserver.pdb
+D:\docum\_PROJECTS\EarlyVersions\gameserver\bin\Debug\gameserver.exe
+D:\docum\_PROJECTS\EarlyVersions\gameserver\bin\Debug\gameserver.pdb
+D:\docum\_PROJECTS\EarlyVersions\gameserver\obj\Debug\ResolveAssemblyReference.cache
+D:\docum\_PROJECTS\EarlyVersions\gameserver\obj\Debug\gameserver.FormMain.resources
+D:\docum\_PROJECTS\EarlyVersions\gameserver\obj\Debug\gameserver.Properties.Resources.resources
+D:\docum\_PROJECTS\EarlyVersions\gameserver\obj\Debug\GenerateResource.read.1.tlog
+D:\docum\_PROJECTS\EarlyVersions\gameserver\obj\Debug\GenerateResource.write.1.tlog
