@@ -15,7 +15,7 @@ namespace Game2D.Game.Concrete
 {
     class NetworkController
     {
-        const int BUFFER_LENGTH = 1024; //todo криво как то с буфером
+        const int BUFFER_LENGTH = 512; //по сколько байт за раз считываем максимум
         const int SEND_AGAIN_TIME = 500;
 
         Stopwatch _stopwatch = new Stopwatch();
@@ -160,9 +160,17 @@ namespace Game2D.Game.Concrete
 
         public byte[] GetData()
         {
-            byte[] result = new Byte[BUFFER_LENGTH];
-            int count = _stream.Read(result, 0, BUFFER_LENGTH);
-            Array.Resize(ref result, count);
+            byte[] result = new byte[0];
+            int count = 0;
+            int curPos;
+            do
+            {
+                curPos = result.Length;
+                Array.Resize(ref result, curPos + BUFFER_LENGTH);
+                count = _stream.DataAvailable? _stream.Read(result, curPos, BUFFER_LENGTH) : 0;
+            }
+            while (count == BUFFER_LENGTH);
+            Array.Resize(ref result, curPos + count);
             return result;
         }
 
