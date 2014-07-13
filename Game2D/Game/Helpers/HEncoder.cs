@@ -36,18 +36,18 @@ namespace Game2D.Game.Helpers
         /// </summary>
         public static int GetInt(ref List<byte> message)
         {
-            BinaryReader reader = new BinaryReader(new MemoryStream(message.ToArray()), UnicodeEncoding.Unicode);
+            int r = BitConverter.ToInt32(message.ToArray(), 0);
             message.RemoveRange(0, 4);
-            return reader.ReadInt32();
+            return r;
         }
         /// <summary>
         /// делает 2 вещи - возвращает переменную и удаляет считанное из message. Возможен вылет с exception
         /// </summary>
         public static double GetDouble(ref List<byte> message)
         {
-            BinaryReader reader = new BinaryReader(new MemoryStream(message.ToArray()), UnicodeEncoding.Unicode);
+            double r = BitConverter.ToDouble(message.ToArray(), 0);
             message.RemoveRange(0, 8);
-            return reader.ReadDouble();
+            return r;
         }
         /// <summary>
         /// делает 2 вещи - возвращает переменную и удаляет считанное из message. Возможен вылет с exception
@@ -66,7 +66,7 @@ namespace Game2D.Game.Helpers
         /// </summary>
         public static byte GetByte(ref List<byte> message)
         {
-            BinaryReader reader = new BinaryReader(new MemoryStream(message.ToArray()), UnicodeEncoding.Unicode);
+            BinaryReader reader = new BinaryReader(new MemoryStream(message.ToArray()));
             message.RemoveRange(0, 1);
             return reader.ReadByte();
         }

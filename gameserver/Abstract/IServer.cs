@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace gameserver
+namespace gameserver.Abstract
 {
     public delegate void ServerLoggedHandler(object sender, ServerLoggedEventArgs e);
 
@@ -25,7 +25,7 @@ namespace gameserver
         PlayerConnected,
         PlayerMoved,
         PlayerDied,
-        // TODO
+        MovePointChanged,
         PlayerWrote
     }
 

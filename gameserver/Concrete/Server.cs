@@ -7,8 +7,14 @@ using System.Net;
 using System.Net.Sockets;
 using System.IO;
 using System.Threading;
+using System.Drawing;
 
-namespace gameserver
+using gameserver.Abstract;
+using gameserver.Concrete.Configuration;
+using gameserver.Concrete.Miscellaneous;
+using gameserver.Structures;
+
+namespace gameserver.Concrete
 {
     class Server : IServer
     {
@@ -151,8 +157,11 @@ namespace gameserver
 
         private void commandPlayers()
         {
-            foreach (Client client in clients)
-                msg(client.Identifier + " (" + client.Address + ").");
+            string[] lines = new String[clients.Count];
+            for (int i = 0; i < clients.Count; i++)
+            {
+                lines[i] = clients[i].Identity + " (" + clients[i].Address + ").";
+            }
         }
 
         #endregion
@@ -168,7 +177,7 @@ namespace gameserver
             {
                 buffer[1] = (byte)client.Identifier;
                 foreach (Client other in clients)
-                    if (!client.Equals(other))
+                    //if (!client.Equals(other))
                         other.WriteData(buffer);
             }
         }
@@ -197,7 +206,7 @@ namespace gameserver
                 int count = 0;
                 switch (type)
                 {
-                    case EClientMessage.PositionChange: break; // TODO
+                    case EClientMessage.PositionChange: count = positionChange(client,data);  break;
                     case EClientMessage.InitialData: count = initializeClient(client,data); break;
                     case EClientMessage.Chat: count = chatMessage(client,data); break;
                 }
@@ -211,15 +220,83 @@ namespace gameserver
             client.Initialized = true;
             log(client.Identity + " connected " + "(" + client.Address + ").");
             sendData(client,EServerMessage.PlayerConnected,data,true);
+            kostyl(client);
             return data[0]+1;
+        }
+
+        private void kostyl(IClient client)
+        {
+            byte[] players = new Byte[0];
+            int cnt = 0;
+            foreach (Client other in clients)
+                if (!client.Equals(other))
+                {
+                    Utilities.Append(ref players, players.Length, new Byte[] { (byte)EServerMessage.PlayerConnected, (byte)other.Identifier });
+                    byte[] nick = Encoding.UTF8.GetBytes(other.Name);
+                    Utilities.Append(ref players, players.Length, new Byte[] { (byte)nick.Length });
+                    Utilities.Append(ref players, players.Length, nick);
+                }
+            client.WriteData(players);
         }
 
         private int chatMessage(IClient client, byte[] data)
         {
-            string message = Encoding.UTF8.GetString(data,1,data[0]);
-            log(client.Identity + ": " + message);
+            log(client.Identity + ": " + Encoding.UTF8.GetString(data,1,data[0]));
             sendData(client,EServerMessage.PlayerWrote,data,true);
             return data[0]+1;
+        }
+
+        private int positionChange(IClient client, byte[] data)
+        {
+            client.Destination = new PointF((float)BitConverter.ToDouble(data,0),(float)BitConverter.ToDouble(data,8));
+            sendData(client,EServerMessage.MovePointChanged,data); // Конечная точка перемещения изменена
+            new Thread(() => handlePosition(client)).Start();
+            return 16;
+        }
+
+        private void handlePosition(IClient client)
+        {
+            PointF tempDestination = client.Destination;
+            AngleF targetAngle = AngleF.AngleBetweenPoints(client.Position,client.Destination);
+            AngleF angleChange = new AngleF((client.Angle.IsClockwiseRotationFaster(targetAngle) ? -Settings.RotationSpeed : Settings.RotationSpeed).Degrees / 1000*Settings.PositionUpdateTime.TotalMilliseconds);
+            double d = Utilities.DistanceBetweenPoints(client.Position,client.Destination);
+            double dx = client.Position.X - client.Destination.X; dx *= -1;
+            double dy = client.Position.Y - client.Destination.Y; dy *= -1;
+
+            double kx = dx / d;
+            double ky = dy / d;
+            while (client.Destination == tempDestination)
+            {
+                if (client.Angle == targetAngle)
+                {
+                    if (Utilities.DistanceBetweenPoints(client.Position, client.Destination) > Settings.Speed / 1000 * Settings.PositionUpdateTime.TotalMilliseconds)
+                    {
+                    client.Position = new PointF
+                        (
+                            (float)(client.Position.X+ (((double)Settings.Speed/1000*Settings.PositionUpdateTime.TotalMilliseconds)*kx)),
+                            (float)(client.Position.Y + (((double)Settings.Speed / 1000 * Settings.PositionUpdateTime.TotalMilliseconds) * ky))
+                        );
+                    }
+                    else
+                    {
+                        client.Position = client.Destination;
+                        client.Destination = new PointF();
+                    }
+                }
+                else
+                    if (client.Angle-targetAngle > angleChange)
+                        client.Angle += angleChange;
+                    else
+                        client.Angle = targetAngle;
+                byte[] data = new Byte[0];
+                Utilities.Append(ref data,0,BitConverter.GetBytes((double)client.Position.X));
+                Utilities.Append(ref data, 8, BitConverter.GetBytes((double)client.Position.Y));
+                Utilities.Append(ref data, 16, BitConverter.GetBytes((double)client.Angle.Radians));
+                Utilities.Log("data sended" + " "+((double)client.Position.X).ToString() +" "+
+                    ((double)client.Position.Y).ToString());
+                sendData(client,EServerMessage.PlayerMoved,data,true);
+                Thread.Sleep(Settings.PositionUpdateTime);
+            }
         }
 
         #endregion

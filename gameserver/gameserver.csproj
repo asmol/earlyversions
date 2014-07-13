@@ -45,22 +45,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstract\IClient.cs" />
-    <Compile Include="Abstract\IServer.cs" />
-    <Compile Include="Abstract\IView.cs" />
-    <Compile Include="Concrete\Client.cs" />
-    <Compile Include="FormMain.cs">
+    <Compile Include="Game\Concrete\PlayerController.cs" />
+    <Compile Include="Game\DataClasses\Main\DBattle.cs" />
+    <Compile Include="Game\DataClasses\Main\DPlayer.cs" />
+    <Compile Include="Game\DataClasses\Main\DStateMain.cs" />
+    <Compile Include="Game\DataClasses\PlayerParts\DTank.cs" />
+    <Compile Include="Game\DataClasses\TankParts\DTankBody.cs" />
+    <Compile Include="Network\Abstract\IClient.cs" />
+    <Compile Include="Network\Abstract\IServer.cs" />
+    <Compile Include="Network\Abstract\IView.cs" />
+    <Compile Include="Network\Concrete\Client.cs" />
+    <Compile Include="Network\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMain.Designer.cs">
+    <Compile Include="Network\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Game\GameServer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Concrete\Server.cs" />
-    <Compile Include="Concrete\Settings.cs" />
-    <Compile Include="Concrete\Miscellaneous\Utilities.cs" />
-    <EmbeddedResource Include="FormMain.resx">
+    <Compile Include="Network\Concrete\Server.cs" />
+    <Compile Include="Network\Concrete\Settings.cs" />
+    <Compile Include="Network\Concrete\Miscellaneous\Utilities.cs" />
+    <Compile Include="Network\Structures\AngleF.cs" />
+    <Compile Include="Struct\Point2.cs" />
+    <Compile Include="Struct\Vector2.cs" />
+    <EmbeddedResource Include="Network\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -85,6 +95,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{7555753D-A7DE-4164-A214-C3D9D9EBA98C}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

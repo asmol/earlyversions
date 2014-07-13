@@ -79,7 +79,8 @@ namespace Game2D.Opengl
         
         public void PassiveMotion(int x, int y)
         {
-            _keyboardState.MousePosScreen = new Point2((double)x / Config.ScreenWidth, (double)y / Config.ScreenHeight);
+
+            _keyboardState.MousePosScreen = new Point2(Config.ScreenWidth * ((double)x / _windowWidth), Config.ScreenHeight * ((double)y / _windowHeight));
             
             _keyboardState.MousePosMap = new Point2(
                 _keyboardState.MousePosScreen.x + _curFrame.camera.x, 

@@ -11,13 +11,14 @@ namespace Game2D.Game.Concrete
 {
     class PlayerManager
     {
-        public void Process(List<Command> serverCom, List<Player> players, Player me, ConnectionInfo connectionInfo)
+        public void Process(List<Command> serverCom, List<Player> players, ref Player me, ConnectionInfo connectionInfo)
             
         {
             foreach (Command c in serverCom)
             {
                 if (c is ComAddPlayer)
                 {
+                    if (me == null) continue; //todo andrey сюда раньше приходим почему то, чем приконнектились
                     ComAddPlayer com = ((ComAddPlayer)c);
                     bool isNew = true;
                     foreach (var p in players) if (p.id == com.playerID) isNew = false;
@@ -43,6 +44,9 @@ namespace Game2D.Game.Concrete
                     if (me == null)
                     {
                         me = CreateNewPlayer(com.playerID, com.nickname);
+                        me.controlled = true;
+                        me.tank.controlled = true;
+                        players.Add(me);
                     }
 
                 }

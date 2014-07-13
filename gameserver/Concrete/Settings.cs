@@ -5,7 +5,9 @@ using System.Text;
 using System.Net;
 using System.IO;
 
-namespace gameserver
+using gameserver.Structures;
+
+namespace gameserver.Concrete.Configuration
 {
     static class Settings
     {
@@ -15,8 +17,13 @@ namespace gameserver
             LogFile = "log.txt";
         public static readonly IPAddress Address = IPAddress.Any;
 
+        public static readonly TimeSpan PositionUpdateTime = new TimeSpan(0,0,0,0,800);
+        public static readonly AngleF RotationSpeed = new AngleF(5, false); // В секунду
+        public static readonly int Speed = 5; // В секунду
+
         public static readonly int Port = 7777;
         public static readonly int MaxPlayers = 16;
+        public static readonly string Password = "none";
 
         public static bool LoadFailed {get {return loadFailed;}}
 
@@ -40,6 +47,7 @@ namespace gameserver
                         {
                             case "port": Port = Int32.Parse(setting[1]); break;
                             case "max_players": MaxPlayers = Int32.Parse(setting[1]); break;
+                            case "password": Password = setting[1]; break;
                         }
                     }
                     catch (Exception e)
@@ -61,6 +69,7 @@ namespace gameserver
             {
                 writer.WriteLine("port " + Port);
                 writer.WriteLine("max_players " + MaxPlayers);
+                writer.WriteLine("password " + Password);
             }
         }
     }

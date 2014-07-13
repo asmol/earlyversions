@@ -1,0 +1,5 @@
+C:\D\Lost\Мои документы\_EarlyVersions\Utils\obj\Debug\ResolveAssemblyReference.cache
+C:\D\Lost\Мои документы\_EarlyVersions\Utils\bin\Debug\Utils.dll
+C:\D\Lost\Мои документы\_EarlyVersions\Utils\bin\Debug\Utils.pdb
+C:\D\Lost\Мои документы\_EarlyVersions\Utils\obj\Debug\Utils.dll
+C:\D\Lost\Мои документы\_EarlyVersions\Utils\obj\Debug\Utils.pdb

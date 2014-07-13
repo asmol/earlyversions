@@ -36,3 +36,24 @@ D:\docum\_PROJECTS\EarlyVersions\gameserver\obj\Debug\gameserver.FormMain.resour
 D:\docum\_PROJECTS\EarlyVersions\gameserver\obj\Debug\gameserver.Properties.Resources.resources
 D:\docum\_PROJECTS\EarlyVersions\gameserver\obj\Debug\GenerateResource.read.1.tlog
 D:\docum\_PROJECTS\EarlyVersions\gameserver\obj\Debug\GenerateResource.write.1.tlog
+D:\Временное\earlyrep\gameserver\bin\Debug\gameserver.exe.config
+D:\Временное\earlyrep\gameserver\obj\Debug\gameserver.exe
+D:\Временное\earlyrep\gameserver\obj\Debug\gameserver.pdb
+D:\Временное\earlyrep\gameserver\bin\Debug\gameserver.exe
+D:\Временное\earlyrep\gameserver\bin\Debug\gameserver.pdb
+D:\Временное\earlyrep\gameserver\obj\Debug\gameserver.csprojResolveAssemblyReference.cache
+D:\Временное\earlyrep\gameserver\obj\Debug\gameserver.FormMain.resources
+D:\Временное\earlyrep\gameserver\obj\Debug\gameserver.Properties.Resources.resources
+D:\Временное\earlyrep\gameserver\obj\Debug\gameserver.csproj.GenerateResource.Cache
+C:\D\Lost\Мои документы\_EarlyVersions\gameserver\bin\Debug\gameserver.exe.config
+C:\D\Lost\Мои документы\_EarlyVersions\gameserver\obj\Debug\gameserver.exe
+C:\D\Lost\Мои документы\_EarlyVersions\gameserver\obj\Debug\gameserver.pdb
+C:\D\Lost\Мои документы\_EarlyVersions\gameserver\obj\Debug\ResolveAssemblyReference.cache
+C:\D\Lost\Мои документы\_EarlyVersions\gameserver\obj\Debug\gameserver.FormMain.resources
+C:\D\Lost\Мои документы\_EarlyVersions\gameserver\obj\Debug\gameserver.Properties.Resources.resources
+C:\D\Lost\Мои документы\_EarlyVersions\gameserver\obj\Debug\GenerateResource.read.1.tlog
+C:\D\Lost\Мои документы\_EarlyVersions\gameserver\obj\Debug\GenerateResource.write.1.tlog
+C:\D\Lost\Мои документы\_EarlyVersions\gameserver\bin\Debug\gameserver.exe
+C:\D\Lost\Мои документы\_EarlyVersions\gameserver\bin\Debug\gameserver.pdb
+C:\D\Lost\Мои документы\_EarlyVersions\gameserver\bin\Debug\Utils.dll
+C:\D\Lost\Мои документы\_EarlyVersions\gameserver\bin\Debug\Utils.pdb

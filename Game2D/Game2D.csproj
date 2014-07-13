@@ -66,21 +66,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Game\Abstract\IProcess.cs" />
-    <Compile Include="Game\Concrete\MenuMain.cs" />
-    <Compile Include="Game\Concrete\NetworkController.cs" />
-    <Compile Include="Game\Concrete\PlayerManager.cs" />
-    <Compile Include="Game\Concrete\RedactorIP.cs" />
-    <Compile Include="Game\Concrete\TankDriverSimple.cs" />
-    <Compile Include="Game\DataClasses\Commands%28FileIncludesALotOfClasses%29.cs" />
-    <Compile Include="Game\DataClasses\DMove.cs" />
-    <Compile Include="Game\DataClasses\MenuItem.cs" />
-    <Compile Include="Game\DataClasses\BattleConfig.cs" />
-    <Compile Include="Game\DataClasses\ConnectionInfo.cs" />
-    <Compile Include="Game\DataClasses\Player.cs" />
-    <Compile Include="Game\DataClasses\Tank.cs" />
-    <Compile Include="Game\Helpers\HDataExcractor.cs" />
-    <Compile Include="Game\Helpers\HEncoder.cs" />
+    <Compile Include="Game\Concrete\Local\MenuMain.cs" />
+    <Compile Include="Game\Concrete\Network\NetworkController.cs" />
+    <Compile Include="Game\Concrete\Battle\PlayerManager.cs" />
+    <Compile Include="Game\Concrete\Local\RedactorIP.cs" />
+    <Compile Include="Game\Concrete\Battle\TankDriverSimple.cs" />
+    <Compile Include="Game\DataClasses\Main\DBattle.cs" />
+    <Compile Include="Game\DataClasses\TankParts\DTankBody.cs" />
+    <Compile Include="Game\DataClasses\Main\DStateMain.cs" />
+    <Compile Include="Game\DataClasses\MenuMain\MenuItem.cs" />
+    <Compile Include="Game\DataClasses\MenuMain\BattleConfig.cs" />
+    <Compile Include="Game\DataClasses\MenuMain\ConnectionInfo.cs" />
+    <Compile Include="Game\DataClasses\Main\DPlayer.cs" />
+    <Compile Include="Game\DataClasses\PlayerParts\DTank.cs" />
     <Compile Include="OpenglFramework\IGame.cs" />
     <Compile Include="OpenglFramework\IGetKeyboardState.cs" />
     <Compile Include="Game\Game.cs" />
@@ -128,7 +126,15 @@
   <ItemGroup>
     <Content Include="OpenglFramework\HowItWorks.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{7555753D-A7DE-4164-A214-C3D9D9EBA98C}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Game\Abstract\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

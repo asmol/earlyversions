@@ -36,3 +36,14 @@ D:\docum\_PROJECTS\EarlyVersions\Game2D\obj\x86\Debug\Game2D.Form1.resources
 D:\docum\_PROJECTS\EarlyVersions\Game2D\obj\x86\Debug\Game2D.Properties.Resources.resources
 D:\docum\_PROJECTS\EarlyVersions\Game2D\obj\x86\Debug\GenerateResource.read.1.tlog
 D:\docum\_PROJECTS\EarlyVersions\Game2D\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\D\Lost\Мои документы\_EarlyVersions\Game2D\obj\x86\Debug\Game2D.exe
+C:\D\Lost\Мои документы\_EarlyVersions\Game2D\obj\x86\Debug\Game2D.pdb
+C:\D\Lost\Мои документы\_EarlyVersions\Game2D\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\D\Lost\Мои документы\_EarlyVersions\Game2D\bin\Debug\Game2D.exe
+C:\D\Lost\Мои документы\_EarlyVersions\Game2D\bin\Debug\Game2D.pdb
+C:\D\Lost\Мои документы\_EarlyVersions\Game2D\bin\Debug\Utils.dll
+C:\D\Lost\Мои документы\_EarlyVersions\Game2D\bin\Debug\Utils.pdb
+C:\D\Lost\Мои документы\_EarlyVersions\Game2D\obj\x86\Debug\Game2D.Form1.resources
+C:\D\Lost\Мои документы\_EarlyVersions\Game2D\obj\x86\Debug\Game2D.Properties.Resources.resources
+C:\D\Lost\Мои документы\_EarlyVersions\Game2D\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\D\Lost\Мои документы\_EarlyVersions\Game2D\obj\x86\Debug\GenerateResource.write.1.tlog

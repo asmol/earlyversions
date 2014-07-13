@@ -8,6 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using gameserver.Abstract;
+using gameserver.Concrete;
+using gameserver.Concrete.Miscellaneous;
+
 namespace gameserver
 {
     public partial class FormMain : Form, IView
@@ -54,7 +58,7 @@ namespace gameserver
 
         private void updateStatusBar(int playerCount)
         {
-            SBMain.Text = "Players online: " + playerCount + "/" + Settings.MaxPlayers;
+            SBMain.Text = "Players online: " + playerCount;
         }
     }
 }

@@ -4,54 +4,48 @@ using System.Linq;
 using System.Text;
 using Game2D.Opengl;
 using Game2D.Game.Concrete;
-using Game2D.Game.Abstract;
 using Game2D.Game.DataClasses;
 using Game2D.Game.Helpers;
-using Game2D.Game.DataClasses.Commands;
+using Utils.Commands;
 
 namespace Game2D.Game
 {
     class Game:IGame
     {
-        MenuMain _menuMain;
+        //компоненты
+        MenuMain _menuMain = new MenuMain();
         TankDriverSimple _tankDriver = new TankDriverSimple();
         NetworkController _networkController = new NetworkController();
         PlayerManager _playerManaged = new PlayerManager();
 
-        ConnectionInfo _connectionInfo;
-        BattleConfig _battleConfig;
-        List<Player> _players;
-        Player _me;
+        //данные
+        DStateMain _state = new DStateMain();
 
-        public Game()
-        {
-            _connectionInfo = new ConnectionInfo();
-            _battleConfig = new BattleConfig();
-            _players = null;
-
-            _menuMain = new MenuMain();
-        }
         
         public Frame Process(IGetKeyboardState keyboard)
         {
 
             Frame frame = new Frame();
 
-            List<Command> serverCommands = _networkController.GetCommands(_connectionInfo);
+            List<Command> serverCommands = _networkController.GetCommands();
             List<Command> createdCommands = new List<Command>();
 
-            if(_connectionInfo.lastResult != ConnectionInfo.EState.connected)
-                _menuMain.Process(ref frame,keyboard, _connectionInfo, _battleConfig);
-            if (_me != null)
+            if(_state.state == DStateMain.EState.local)
+                _menuMain.Process(ref frame,keyboard, _state);
+
+            if (_state.wish == DStateMain.EWish.joinServer)
+                _networkController.Connect(_state);
+            /*if (_me != null)
             {
                 createdCommands.AddRange(
                     _tankDriver.Process(ref frame, keyboard, serverCommands,
                     _me.tank.move, HDataExcractor.GetDMoveDictionary(_players))
                     );
-            }
-            _playerManaged.Process(serverCommands, _players,_me, _connectionInfo);
+            }*/
+            if(_state.state == DStateMain.EState.inBattle) 
+                _playerManaged.Process(serverCommands, _state);
 
-            _networkController.SendCommands(createdCommands, _connectionInfo);
+            _networkController.SendCommands(createdCommands);
             return frame;
         }
     }

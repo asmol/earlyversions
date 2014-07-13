@@ -5,13 +5,17 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Net.Sockets;
+using System.Drawing;
 
-namespace gameserver
+using gameserver.Abstract;
+using gameserver.Structures;
+
+namespace gameserver.Concrete
 {
     class Client : IClient
     {
         private const int bufferLength = 256,
-            readTimeout = 20000;
+            readTimeout = 180000;
 
         private readonly TcpClient connection;
         private readonly NetworkStream stream;
@@ -34,6 +38,10 @@ namespace gameserver
                 return address.Substring(0,address.IndexOf(':'));
             }
         }
+
+        public PointF Destination {get; set;}
+        public PointF Position {get; set;}
+        public AngleF Angle {get; set;}
 
         public Client(TcpClient connection, int identifier)
         {
@@ -60,7 +68,7 @@ namespace gameserver
 
         public void WriteData(byte[] buffer)
         {
-            stream.Write(buffer,0,buffer.Length);
+            stream.Write(buffer,0,buffer.Length); //todo нормальное отключение(переставать слать данные)
             stream.Flush();
         }
 

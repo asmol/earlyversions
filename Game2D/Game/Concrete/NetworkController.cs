@@ -16,7 +16,7 @@ namespace Game2D.Game.Concrete
     class NetworkController
     {
         const int BUFFER_LENGTH = 512; //по сколько байт за раз считываем максимум
-        const int SEND_AGAIN_TIME = 500;
+        const int SEND_AGAIN_TIME = 500000;
 
         Stopwatch _stopwatch = new Stopwatch();
         List<Command> _waitingForConfirmation = new List<Command>();
@@ -26,18 +26,38 @@ namespace Game2D.Game.Concrete
         TcpClient _activeTcpClient=null;
         NetworkStream _stream=null;
         IPAddress _activeIP=null; int _activePort=0;
+
+
+        
+        List<int> wait = new List<int>();
+        List<Command> tempCommand=new List<Command>();
+        int ping = 0;
+
         public NetworkController()
         {
             _stopwatch.Restart();
+            _waitingForConfirmation.Add(new ComEmpty());
         }
 
         /// <summary>
         /// Дает актуальные(подтвержденные) команды, которые нужно исполнить на текущем тике 
         /// </summary>
-        public List<Command> GetCommands(ConnectionInfo info)
+        public List<Command> GetCommands(ConnectionInfo info, ref Frame frame)
         {
             List<Command> r = new List<Command>();
 
+          /*  for(int i =0; i < wait.Count; i++)
+            {
+                if (wait[i] > 0)
+                {
+                    wait[i]--; if (wait[i] == 0)
+                    {
+                        r.Add(tempCommand[i]);
+                        tempCommand.RemoveAt(i); wait.RemoveAt(i--);
+                    }
+                }
+                
+            }*/
             if (_stream != null && _stream.DataAvailable)
             {
                 List<byte> data = new List<byte>( GetData());
@@ -66,18 +86,24 @@ namespace Game2D.Game.Concrete
                             r.Add(new ComAddPlayer(ref data));
                             break;
                         case 2:
+                            //wait.Add( 10);
+                            //tempCommand.Add(new ComRefreshTankPos(ref data));
                             r.Add(new ComRefreshTankPos(ref data));
                             break;
                         case 3:
                             r.Add(new ComRemovePlayer(ref data));
                             break;
                         case 4:
+                            ComEndPointOfMoving l = FindLastInWaitingList<ComEndPointOfMoving>();
+                            ping = (int)(Time() - l.timeWhenSentToServer);
                             r.Add(new ComEndPointOfMoving(ref data));
                             break;
                     }
                 }
             }
-            return new List<Command>();
+
+            frame.Add(new Text(EFont.fiol, new Point2(1, 1), 2, 4, ping.ToString()));
+            return r;
         }
 
         public void SendCommands(List<Command> commands, ConnectionInfo info)
@@ -112,25 +138,26 @@ namespace Game2D.Game.Concrete
                     if (c is ComEndPointOfMoving) _waitingForConfirmation.RemoveAll((a) => a is ComEndPointOfMoving);
                     SendCommandToServer(c);
                 }
-            }
 
-            for (int i = 0; i < _waitingForConfirmation.Count; i++)
-            {
-                Command c = _waitingForConfirmation[i];
-                if (Time() - c.timeWhenSentToServer >= SEND_AGAIN_TIME)
+
+                for (int i = 0; i < _waitingForConfirmation.Count; i++)
                 {
-                    _waitingForConfirmation.RemoveAt(i--); //удаляем, т к все равно следующим методом туда снова добавится
-                    SendCommandToServer(c);
+                    Command c = _waitingForConfirmation[i];
+                    if (Time() - c.timeWhenSentToServer >= SEND_AGAIN_TIME)
+                    {
+                        _waitingForConfirmation.RemoveAt(i--); //удаляем, т к все равно следующим методом туда снова добавится
+                        SendCommandToServer(c);
+                    }
                 }
-            }
 
 
-            {
-                ComEmpty c = FindLastInWaitingList<ComEmpty>();
-                if ((c == null) || Time() - c.timeWhenSentToServer > 1000)
                 {
-                    _waitingForConfirmation.Remove(c);
-                    SendCommandToServer(c);
+                    ComEmpty c = FindLastInWaitingList<ComEmpty>();
+                    if (Time() - c.timeWhenSentToServer > SEND_AGAIN_TIME)
+                    {
+                        _waitingForConfirmation.Remove(c);
+                        SendCommandToServer(c);
+                    }
                 }
             }
 
@@ -142,7 +169,7 @@ namespace Game2D.Game.Concrete
         void SendCommandToServer(Command command)
         {
             int num=-1;
-            if (command is ComEndPointOfMoving) num = 0;
+            if (command is ComEndPointOfMoving) { num = 0;  }
             else if (command is ComConnect) num = 1;
             else if (command is ComEmpty) num = 2;
 

@@ -1,124 +1,564 @@
-22:57:38 Server starting...
-22:57:38 Server started (7777).
-23:01:13 Server starting...
-23:01:13 Server started (7777).
-23:09:13 Server starting...
-23:09:13 Server started (7777).
-23:09:20 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:09:33 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:09:45 The First Byte Reached Enemy Territory (0) disconnected (quit).
-23:09:53 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:10:14 The First Byte Reached Enemy Territory (0) disconnected (timeout).
-23:13:23 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:13:43 The First Byte Reached Enemy Territory (0) disconnected (timeout).
-23:14:33 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:14:36 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:14:57 The First Byte Reached Enemy Territory (0) disconnected (timeout).
-23:15:16 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:15:36 The First Byte Reached Enemy Territory (0) disconnected (timeout).
-23:27:26 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:26 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:27 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:29 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:30 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:41 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:42 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:46 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:46 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:47 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:47 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:48 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:48 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:49 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:49 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:50 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:50 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:51 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:51 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:52 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:52 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:53 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:53 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:54 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:54 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:55 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:55 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:56 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:56 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:57 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:57 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:58 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:58 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:27:59 The First Byte Reached Enemy Territory (0) disconnected (quit).
-23:29:03 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:29:24 The First Byte Reached Enemy Territory (0) disconnected (timeout).
-23:29:49 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:29:50 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:29:51 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:29:51 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:29:52 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:29:52 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:29:53 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:29:53 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:29:54 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:29:54 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:29:55 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:29:55 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:29:56 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:29:56 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:29:57 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:29:57 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:29:58 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:29:58 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:29:59 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:29:59 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:00 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:00 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:01 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:01 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:02 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:02 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:03 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:03 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:04 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:04 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:05 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:05 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:06 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:06 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:07 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:07 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:08 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:08 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:09 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:09 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:10 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:10 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:11 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:11 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:12 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:12 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:13 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:13 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:14 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:14 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:15 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:15 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:16 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:16 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:17 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:17 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:18 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:18 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:30:19 The First Byte Reached Enemy Territory (0) disconnected (quit).
-23:31:58 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-23:32:06 The First Byte Reached Enemy Territory (0) disconnected (quit).
-01:12:53 Server starting...
-01:12:53 Server started (7777).
-01:13:22 Server starting...
-01:13:23 Server started (7777).
-01:13:26 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
-01:13:32 The First Byte Reached Enemy Territory (0) disconnected (quit).
-01:13:34 Server shutting down...
-01:13:34 Server shut down.
+22:21:19 Server starting...
+22:21:19 Server started (7777).
+22:21:47 Server shutting down...
+22:21:47 Server shut down.
 
+22:31:55 Server starting...
+22:31:55 Server started (7777).
+22:35:50 Server shutting down...
+22:35:50 Server shut down.
+
+01:05:21 Server starting...
+01:05:21 Server started (7777).
+01:16:52 Server starting...
+01:16:52 Server started (7777).
+01:16:52 WARNING: settings.cfg wasn’t loaded properly.
+01:17:18 Server shutting down...
+01:17:18 Server shut down.
+
+01:17:49 Server starting...
+01:17:49 Server started (7777).
+01:17:49 WARNING: settings.cfg wasn’t loaded properly.
+01:18:00 Server shutting down...
+01:18:00 Server shut down.
+
+01:18:10 Server starting...
+01:18:10 Server started (7777).
+01:18:10 WARNING: settings.cfg wasn’t loaded properly.
+01:18:18 Server shutting down...
+01:18:18 Server shut down.
+
+01:22:53 Server starting...
+01:22:53 Server started (7777).
+01:22:56 Server shutting down...
+01:22:56 Server shut down.
+
+01:23:16 Server starting...
+01:23:16 Server started (7777).
+01:23:34 Server shutting down...
+01:23:34 Server shut down.
+
+01:47:02 Server starting...
+01:47:02 Server started (7777).
+01:47:12 Server shutting down...
+01:47:12 Server shut down.
+
+01:47:46 Server starting...
+01:47:46 Server started (7777).
+01:47:48 Server shutting down...
+01:47:48 Server shut down.
+
+01:47:59 Server starting...
+01:47:59 Server started (7777).
+01:48:07 Server shutting down...
+01:48:07 Server shut down.
+
+01:51:05 Server starting...
+01:51:05 Server started (7777).
+01:51:17 Server shutting down...
+01:51:17 Server shut down.
+
+01:52:27 Server starting...
+01:52:27 Server started (7777).
+01:53:43 Server starting...
+01:53:43 Server started (7777).
+01:54:08 Server shutting down...
+01:54:08 Server shut down.
+
+01:57:45 Server starting...
+01:57:45 Server started (7777).
+01:57:47 Server shutting down...
+01:57:47 Server shut down.
+
+02:04:22 Server starting...
+02:04:22 Server started (7777).
+02:04:32 Server shutting down...
+02:04:32 Server shut down.
+
+02:04:44 Server starting...
+02:04:44 Server started (7777).
+02:04:50 Server shutting down...
+02:04:50 Server shut down.
+
+18:37:51 Server starting...
+18:37:51 Server started (7777).
+18:38:40 Server shutting down...
+18:38:40 Server shut down.
+
+18:38:45 Server starting...
+18:38:46 Server started (7777).
+18:40:04 Server shutting down...
+18:40:04 Server shut down.
+
+18:50:16 Server starting...
+18:50:16 Server started (7777).
+18:50:20 Server shutting down...
+18:50:20 Server shut down.
+
+18:51:13 Server starting...
+18:51:13 Server started (7777).
+18:51:57 Server shutting down...
+18:51:57 Server shut down.
+
+18:52:37 Server starting...
+18:52:37 Server started (7777).
+18:52:48 Server shutting down...
+18:52:48 Server shut down.
+
+18:53:59 Server starting...
+18:53:59 Server started (7777).
+18:56:21 Server shutting down...
+18:56:21 Server shut down.
+
+19:00:05 Server starting...
+19:00:05 Server started (7777).
+19:00:07 Server shutting down...
+19:00:07 Server shut down.
+
+19:33:10 Server starting...
+19:33:10 Server started (7777).
+19:33:13 Server shutting down...
+19:33:13 Server shut down.
+
+19:33:17 Server starting...
+19:33:17 Server started (7777).
+19:33:29 Server shutting down...
+19:33:29 Server shut down.
+
+22:46:26 Server starting...
+22:46:26 Server started (7777).
+22:46:41 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+22:47:01 The First Byte Reached Enemy Territory (0) disconnected (timeout).
+22:47:08 Server shutting down...
+22:47:08 Server shut down.
+
+22:50:32 Server starting...
+22:50:32 Server started (7777).
+22:50:42 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+22:51:03 The First Byte Reached Enemy Territory (0) disconnected (timeout).
+22:51:05 Server shutting down...
+22:51:05 Server shut down.
+
+23:04:54 Server starting...
+23:04:54 Server started (7777).
+23:05:00 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+23:05:16 The First Byte Reached Enemy Territory (0) disconnected (quit).
+23:05:20 Server shutting down...
+23:05:20 Server shut down.
+
+23:13:22 Server starting...
+23:13:22 Server started (7777).
+23:13:32 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+23:13:46 Server shutting down...
+23:15:18 Server starting...
+23:15:18 Server started (7777).
+23:15:21 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+23:18:22 The First Byte Reached Enemy Territory (0) disconnected (timeout).
+23:21:59 Server shutting down...
+23:21:59 Server shut down.
+
+23:31:44 Server starting...
+23:31:44 Server started (7777).
+23:31:48 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+23:33:49 Server starting...
+23:33:49 Server started (7777).
+23:33:57 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+23:37:44 Server starting...
+23:37:44 Server started (7777).
+23:37:47 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+23:39:21 Server starting...
+23:39:21 Server started (7777).
+23:39:27 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+23:40:06 Server starting...
+23:40:06 Server started (7777).
+23:40:08 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+23:42:27 Server starting...
+23:42:27 Server started (7777).
+23:42:34 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+23:43:15 Server starting...
+23:43:15 Server started (7777).
+23:43:17 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+23:44:54 Server starting...
+23:44:54 Server started (7777).
+23:44:57 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+23:45:51 Server starting...
+23:45:51 Server started (7777).
+23:45:57 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+23:48:03 Server starting...
+23:48:03 Server started (7777).
+23:48:09 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+23:51:14 Server starting...
+23:51:14 Server started (7777).
+23:51:21 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+23:52:33 The First Byte Reached Enemy Territory (0) disconnected (quit).
+23:59:42 Server starting...
+23:59:42 Server started (7777).
+23:59:45 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+00:01:41 Server starting...
+00:01:41 Server started (7777).
+00:02:17 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+00:08:31 The First Byte Reached Enemy Territory (0) disconnected (quit).
+00:09:35 Server starting...
+00:09:35 Server started (7777).
+00:09:39 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+00:11:19 The First Byte Reached Enemy Territory (0) disconnected (quit).
+00:15:04 Server starting...
+00:15:04 Server started (7777).
+00:15:06 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+00:18:34 The First Byte Reached Enemy Territory (0) disconnected (timeout).
+00:25:45 Server starting...
+00:25:45 Server started (7777).
+00:25:48 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+00:30:12 The First Byte Reached Enemy Territory (0) disconnected (timeout).
+00:36:24 Server starting...
+00:36:24 Server started (7777).
+00:36:26 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+00:38:37 Server starting...
+00:38:37 Server started (7777).
+00:38:39 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+00:39:05 The First Byte Reached Enemy Territory (0) disconnected (quit).
+00:39:32 Server starting...
+00:39:32 Server started (7777).
+00:39:34 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+00:39:50 The First Byte Reached Enemy Territory (0) disconnected (quit).
+00:39:55 Server shutting down...
+00:39:55 Server shut down.
+
+00:46:27 Server starting...
+00:46:27 Server started (7777).
+00:46:30 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+00:48:57 Server starting...
+00:48:57 Server started (7777).
+00:49:01 Server shutting down...
+00:49:01 Server shut down.
+
+00:50:33 Server starting...
+00:50:33 Server started (7777).
+00:50:39 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+00:50:58 Server starting...
+00:50:58 Server started (7777).
+00:51:00 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+00:54:16 Server starting...
+00:54:16 Server started (7777).
+00:54:19 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+00:54:59 The First Byte Reached Enemy Territory (0) disconnected (quit).
+00:55:14 Server starting...
+00:55:14 Server started (7777).
+00:55:16 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+00:55:19 The First Byte Reached Enemy Territory (0) disconnected (quit).
+00:55:33 Server starting...
+00:55:33 Server started (7777).
+00:55:35 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+00:57:22 Server starting...
+00:57:22 Server started (7777).
+00:57:24 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+00:58:45 Server starting...
+00:58:45 Server started (7777).
+00:58:47 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+01:00:33 Server starting...
+01:00:33 Server started (7777).
+01:00:35 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+01:01:13 Server starting...
+01:01:13 Server started (7777).
+01:01:15 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+01:08:22 Server starting...
+01:08:22 Server started (7777).
+01:08:25 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+01:12:32 The First Byte Reached Enemy Territory (0) disconnected (timeout).
+01:16:45 Server starting...
+01:16:45 Server started (7777).
+01:16:55 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+01:20:40 Server starting...
+01:20:40 Server started (7777).
+01:20:42 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+01:22:04 Server starting...
+01:22:04 Server started (7777).
+01:22:06 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+01:26:14 Server starting...
+01:26:14 Server started (7777).
+01:26:16 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+01:27:10 Server starting...
+01:27:10 Server started (7777).
+01:27:12 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+01:31:56 The First Byte Reached Enemy Territory (0) disconnected (timeout).
+01:33:04 Server starting...
+01:33:04 Server started (7777).
+01:33:07 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+01:34:16 Server starting...
+01:34:16 Server started (7777).
+01:34:18 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+01:54:17 Server starting...
+01:54:17 Server started (7777).
+01:54:18 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+01:55:50 The First Byte Reached Enemy Territory (0) disconnected (quit).
+01:56:34 Server starting...
+01:56:34 Server started (7777).
+01:56:36 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+01:57:40 The First Byte Reached Enemy Territory (0) disconnected (quit).
+01:57:41 Server shutting down...
+01:57:41 Server shut down.
+
+01:58:21 Server starting...
+01:58:21 Server started (7777).
+01:58:31 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+01:59:58 The First Byte Reached Enemy Territory (0) disconnected (quit).
+02:00:00 Server shutting down...
+02:00:00 Server shut down.
+
+21:43:20 Server starting...
+21:43:20 Server started (7777).
+21:43:26 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+21:43:37 The First Byte Reached Enemy Territory (1) connected (127.0.0.1).
+21:49:53 Server starting...
+21:49:53 Server started (7777).
+21:49:55 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+21:50:00 The First Byte Reached Enemy Territory (1) connected (127.0.0.1).
+21:52:50 Server starting...
+21:52:50 Server started (7777).
+21:52:57 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+21:54:33 The First Byte Reached Enemy Territory (1) connected (127.0.0.1).
+21:54:51 The First Byte Reached Enemy Territory (0) disconnected (quit).
+21:57:04 Server starting...
+21:57:04 Server started (7777).
+21:57:14 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+21:57:17 The First Byte Reached Enemy Territory (1) connected (127.0.0.1).
+21:59:25 Server starting...
+21:59:25 Server started (7777).
+21:59:27 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+22:02:55 The First Byte Reached Enemy Territory (0) disconnected (timeout).
+22:05:04 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+22:05:16 Server starting...
+22:05:16 Server started (7777).
+22:05:22 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+22:05:29 The First Byte Reached Enemy Territory (1) connected (127.0.0.1).
+22:07:56 Server starting...
+22:07:56 Server started (7777).
+22:08:01 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+22:08:07 The First Byte Reached Enemy Territory (1) connected (127.0.0.1).
+22:09:39 Server starting...
+22:09:39 Server started (7777).
+22:09:41 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+22:09:45 The First Byte Reached Enemy Territory (1) connected (127.0.0.1).
+22:10:18 Server starting...
+22:10:18 Server started (7777).
+22:10:21 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+22:10:25 The First Byte Reached Enemy Territory (1) connected (127.0.0.1).
+22:12:33 Server starting...
+22:12:33 Server started (7777).
+22:12:37 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+22:13:01 Server starting...
+22:13:01 Server started (7777).
+22:13:03 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+22:13:12 The First Byte Reached Enemy Territory (0) disconnected (quit).
+22:13:14 Server shutting down...
+22:13:14 Server shut down.
+
+22:13:37 Server starting...
+22:13:37 Server started (7777).
+22:13:39 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+22:13:56 The First Byte Reached Enemy Territory (1) connected (46.164.226.118).
+22:16:20 The First Byte Reached Enemy Territory (0) disconnected (quit).
+22:16:21 Server shutting down...
+22:17:14 Server starting...
+22:17:14 Server started (7777).
+22:17:18 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+22:18:42 Server starting...
+22:18:43 Server started (7777).
+22:27:41 Server starting...
+22:27:41 Server started (7777).
+22:27:45 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+22:27:54 The First Byte Reached Enemy Territory (0) disconnected (quit).
+22:28:21 Server starting...
+22:28:21 Server started (7777).
+22:28:24 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+22:28:52 Server starting...
+22:28:52 Server started (7777).
+22:28:54 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+22:29:37 The First Byte Reached Enemy Territory (0) disconnected (quit).
+22:30:26 Server starting...
+22:30:26 Server started (7777).
+22:30:29 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+22:35:17 Server starting...
+22:35:17 Server started (7777).
+22:35:20 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+22:35:28 Server starting...
+22:35:28 Server started (7777).
+22:35:30 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+22:35:40 The First Byte Reached Enemy Territory (0) disconnected (quit).
+22:37:53 Server starting...
+22:37:53 Server started (7777).
+22:37:56 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+22:41:09 Server starting...
+22:41:09 Server started (7777).
+22:41:11 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+22:42:11 The First Byte Reached Enemy Territory (0) disconnected (quit).
+22:42:13 Server starting...
+22:42:14 Server started (7777).
+22:42:16 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+22:42:23 The First Byte Reached Enemy Territory (0) disconnected (quit).
+22:42:34 Server starting...
+22:42:34 Server started (7777).
+22:42:36 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+22:42:44 Server starting...
+22:42:44 Server started (7777).
+22:42:46 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+22:44:12 The First Byte Reached Enemy Territory (0) disconnected (quit).
+20:08:12 Server starting...
+20:08:12 Server started (7777).
+20:08:16 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+20:08:54 Server starting...
+20:08:54 Server started (7777).
+20:08:57 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+20:16:41 Server starting...
+20:16:41 Server started (7777).
+20:16:43 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+20:17:07 The First Byte Reached Enemy Territory (0) disconnected (quit).
+20:17:10 Server starting...
+20:17:10 Server started (7777).
+20:17:12 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+20:18:13 Server starting...
+20:18:13 Server started (7777).
+20:18:15 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+20:21:50 Server starting...
+20:21:50 Server started (7777).
+20:21:52 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+20:22:03 Server starting...
+20:22:03 Server started (7777).
+20:22:05 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+20:22:54 Server starting...
+20:22:55 Server started (7777).
+20:22:56 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+20:23:41 Server starting...
+20:23:41 Server started (7777).
+20:23:42 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+20:24:43 Server starting...
+20:24:43 Server started (7777).
+20:24:45 The First Byte Reached Enemy Territory (0) connected (127.0.0.1).
+20:26:54 Server starting...
+20:26:54 Server started (7777).
+20:26:56 The First Byte Reached Enemy Territory (0) connected (94.141.49.24).
+20:43:48 Server starting...
+20:43:48 Server started (7777).
+20:43:53 The First Byte Reached Enemy Territory (0) connected (94.141.49.24).
+20:44:03 Server starting...
+20:44:03 Server started (7777).
+20:44:05 The First Byte Reached Enemy Territory (0) connected (94.141.49.24).
+20:45:16 Server starting...
+20:45:16 Server started (7777).
+20:45:18 The First Byte Reached Enemy Territory (0) connected (94.141.49.24).
+20:46:28 The First Byte Reached Enemy Territory (0) disconnected (quit).
+20:50:56 Server starting...
+20:50:56 Server started (7777).
+20:50:58 The First Byte Reached Enemy Territory (0) connected (94.141.49.24).
+20:51:08 The First Byte Reached Enemy Territory (0) disconnected (quit).
+20:52:24 Server starting...
+20:52:24 Server started (7777).
+20:52:26 The First Byte Reached Enemy Territory (0) connected (94.141.49.24).
+20:52:31 Server shutting down...
+20:52:31 Server shut down.
+20:52:31 The First Byte Reached Enemy Territory (0) disconnected (quit).
+
+20:52:46 Server starting...
+20:52:46 Server started (7777).
+20:53:02 Server starting...
+20:53:02 Server started (7777).
+20:53:04 The First Byte Reached Enemy Territory (0) connected (94.141.49.24).
+20:53:38 The First Byte Reached Enemy Territory (0) disconnected (quit).
+20:55:25 Server starting...
+20:55:25 Server started (7777).
+20:55:29 The First Byte Reached Enemy Territory (0) connected (94.141.49.24).
+20:55:32 The First Byte Reached Enemy Territory (1) connected (94.141.49.24).
+20:57:06 Server starting...
+20:57:06 Server started (7777).
+20:57:08 The First Byte Reached Enemy Territory (0) connected (94.141.49.24).
+20:59:30 The First Byte Reached Enemy Territory (1) connected (94.141.49.24).
+21:08:33 Server starting...
+21:08:33 Server started (7777).
+21:08:34 The First Byte Reached Enemy Territory (0) connected (94.141.49.24).
+21:09:36 Server starting...
+21:09:36 Server started (7777).
+21:09:38 The First Byte Reached Enemy Territory (0) connected (94.141.49.24).
+21:09:44 The First Byte Reached Enemy Territory (0) disconnected (quit).
+21:09:45 Server starting...
+21:09:45 Server started (7777).
+21:09:47 The First Byte Reached Enemy Territory (0) connected (94.141.49.24).
+21:10:47 Server starting...
+21:10:47 Server started (7777).
+21:10:53 The First Byte Reached Enemy Territory (0) connected (94.141.49.24).
+21:15:59 Server starting...
+21:15:59 Server started (7777).
+21:16:01 The First Byte Reached Enemy Territory (0) connected (94.141.49.24).
+21:16:59 Server starting...
+21:16:59 Server started (7777).
+21:17:03 The First Byte Reached Enemy Territory (0) connected (94.141.49.24).
+21:17:07 The First Byte Reached Enemy Territory (0) disconnected (quit).
+21:17:41 Server starting...
+21:17:41 Server started (7777).
+21:18:12 Server starting...
+21:18:12 Server started (7777).
+21:18:14 The First Byte Reached Enemy Territory (0) connected (94.141.49.24).
+21:18:31 Server starting...
+21:18:31 Server started (7777).
+21:18:32 The First Byte Reached Enemy Territory (0) connected (94.141.49.24).
+21:18:34 The First Byte Reached Enemy Territory (1) connected (94.141.49.24).
+21:29:25 Server starting...
+21:29:25 Server started (7777).
+21:29:27 The First Byte Reached Enemy Territory (0) connected (94.141.49.24).
+21:29:48 Server starting...
+21:29:48 Server started (7777).
+21:29:49 The First Byte Reached Enemy Territory (0) connected (94.141.49.24).
+21:29:54 The First Byte Reached Enemy Territory (0) disconnected (quit).
+21:30:28 Server starting...
+21:30:28 Server started (7777).
+21:30:30 The First Byte Reached Enemy Territory (0) connected (94.141.49.24).
+21:30:32 The First Byte Reached Enemy Territory (0) disconnected (quit).
+21:31:23 Server starting...
+21:31:23 Server started (7777).
+21:31:25 The First Byte Reached Enemy Territory (0) connected (94.141.49.24).
+21:31:30 The First Byte Reached Enemy Territory (0) disconnected (quit).
+21:33:09 Server starting...
+21:33:09 Server started (7777).
+21:33:11 The First Byte Reached Enemy Territory (0) connected (94.141.49.24).
+21:33:30 Server starting...
+21:33:30 Server started (7777).
+21:33:31 The First Byte Reached Enemy Territory (0) connected (94.141.49.24).
+21:34:19 Server starting...
+21:34:19 Server started (7777).
+21:34:20 The First Byte Reached Enemy Territory (0) connected (94.141.49.24).
+21:36:10 Server starting...
+21:36:10 Server started (7777).
+21:36:12 The First Byte Reached Enemy Territory (0) connected (94.141.49.24).
+21:37:31 Server starting...
+21:37:31 Server started (7777).
+21:37:32 The First Byte Reached Enemy Territory (0) connected (94.141.49.24).
+21:40:22 Server starting...
+21:40:22 Server started (7777).
+21:40:24 The First Byte Reached Enemy Territory (0) connected (94.141.49.24).
+21:41:07 The First Byte Reached Enemy Territory (1) connected (94.141.49.24).
+21:42:00 The First Byte Reached Enemy Territory (1) disconnected (quit).
+12:51:13 Server starting...
+12:51:13 Server started (7777).
+12:51:52 Server starting...
+12:51:52 Server started (7777).
+12:52:49 Server starting...
+12:52:49 Server started (7777).
+12:53:51 Server starting...
+12:53:51 Server started (7777).
+12:54:14 Server starting...
+12:54:14 Server started (7777).
+12:54:36 Server starting...
+12:54:36 Server started (7777).
+12:59:07 Server starting...
+12:59:07 Server started (7777).
+12:59:39 Server starting...
+12:59:39 Server started (7777).
+13:00:38 Server starting...
+13:00:38 Server started (7777).
+13:01:39 Server starting...
+13:01:39 Server started (7777).
+13:02:54 Server starting...
+13:02:54 Server started (7777).
+13:04:55 Server starting...
+13:04:55 Server started (7777).
+13:12:33 Server starting...
+13:12:33 Server started (7777).

@@ -6,6 +6,7 @@ using Game2D.Game.DataClasses;
 using Game2D.Game.Abstract;
 using Game2D.Opengl;
 using Game2D.Game.DataClasses.Commands;
+using Game2D.Game.Helpers;
 
 namespace Game2D.Game.Concrete
 {
@@ -29,7 +30,9 @@ namespace Game2D.Game.Concrete
                 if (c is ComRefreshTankPos)
                 {
                     ComRefreshTankPos com = ((ComRefreshTankPos)c);
-                    allTanks[com.playerID].pos = com.pos;
+                    if(allTanks.ContainsKey(com.playerID))
+                        allTanks[com.playerID].pos = com.pos;
+                    HLog.Log("command in TankDriver"+" "+com.pos.x.ToString() + " "+ com.pos.y.ToString());
                 }
                 else if (c is ComEndPointOfMoving)
                 {
@@ -47,7 +50,7 @@ namespace Game2D.Game.Concrete
             foreach (DMove tank in allTanks.Values)
             {
                 Vector2 speedV = new Vector2(0, 0, tank.pos.angleDeg);
-                Point2 speedAdd = new Point2(speedV.x * tank.speed, speedV.y * tank.speed);
+                Point2 speedAdd = new Point2(speedV.vx * tank.speed, speedV.vy * tank.speed);
                 tank.pos = new Vector2(tank.pos.x + speedAdd.x,
                     tank.pos.y + speedAdd.y, tank.pos.angleDeg);
             }
